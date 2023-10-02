@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+
+
+        .text-wrapper{
+            position: absolute;
+            top: 185px;
+            bottom: 467px;
+            right: 855px;
+            left: 302px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 45px;
+            color: #000000;
+        }
+        .text-wrapper-2{
+            position: absolute;
+            top: 269px;
+            bottom: 421px;
+            left: 286px;
+            right: 839px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #000000;
+            align-items: center;
+        } 
+        .text-wrapper-3{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000000;
+        }
+        .text-wrapper-4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000000;
+        }
+        /* gambar di samping*/
+        .overlap{
+            position:absolute;
+            right: 63px;
+            top: 61px;
+            left:713px;
+            bottom: 37px;
+        }
+        .overlap img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .custom-button{
+            position: absolute;
+            top: 517px;
+            left: 120px;
+            right: 672px;
+            bottom: 159px;
+            background-color: #6D8994;
+            color: #FFFFFF;
+            border-radius: 179px;
+            border: none;
+            width: 488px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .Username, .Password{
+            width: 488px;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #000000;
+            outline: none;
+        }
+        .Forgot-pass{
+            position: absolute;
+            right: 145px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #71706E;
+        }
+        .not-registered{
+            position: absolute;
+            top: 591px;
+            bottom: 109px;
+            right: 783px;
+            left: 231px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #71706E;
+            a{
+                color: #0B2A3E;
+            }
+        }
+        .login{
+            position: absolute;
+            top: 311px;
+            left: 120px;
+            right: 672px;
+            bottom: 260.87px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="label"><div class="text-wrapper">Login</div></div>
+    <div class="label-2"><div class="text-wrapper-2">Welcome Back!</div></div>   
+
+    <div class="login">
+    <form id="login" method="get" action="login_process.php">
+        <div class="text-wrapper-3">Username</div>
+        <input type="text" name="Uname" id="Uname" class="Username">
+        <br><br>
+        <div class="text-wrapper-4">Password</div>
+        <div class="password-container">
+            <input type="Password" name="Pass" id="Pass" class="Password">
+            <br>
+             <a href="#" class="Forgot-pass">Forgot Password?</a>
+        </div>
+    </form>
+</div>
+<a href="#">
+    <button class="custom-button">Login</button>
+</a>
+<div class="not-registered">Not registered? <a href="register.html">Create Account</a></div>
+<div class="overlap">
+    <img src="assets/a.png">
+</div>
+</body>
+</html>
